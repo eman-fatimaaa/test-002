@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/vite-DcBtz0py.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike Data Fetch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        main {
+            min-height: 75dvh;
+        }
+
+        .d-none {
+            display: none;
+        }
+
+        .spinner-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+
+        .spinner-border {
+            width: 3rem;
+            height: 3rem;
+        }
+    </style>
+  <script type="module" crossorigin src="/assets/index-M7wnyL-8.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CiBb2YsH.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+            </div>
+        </nav>
+        <form class="row row-cols-lg-auto g-3 align-items-center mt-2" data-form>
+            <div class="col">
+                <input type="text" class="form-control" id="test" name="test" placeholder="Type your search term here!" autocomplete="off" pattern="[a-zA-Z0-9]*" required />
+            </div>
+            <div class="col">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </header>
+    
+    <main class="container">
+        <h2 class="d-none">Your results</h2>
+        <div class="spinner-container d-none">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <div class="alert alert-danger d-none" role="alert">
+            No results found!
+        </div>
+        <div class="dynamic_data row"></div>
+    </main>
+
+
+
+</body>
+
+</html>
